@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #319795;
+    --color-primary-hover: #38B2AC;
+}
+
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* 2. Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* 3. Internet Explorer 10+ and Edge */
+html {
+    -ms-overflow-style: none;
+}
