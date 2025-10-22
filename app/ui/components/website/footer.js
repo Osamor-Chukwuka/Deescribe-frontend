@@ -5,7 +5,7 @@ export default function Footer() {
                 <div className="px-4 sm:px-8 md:px-16 py-15">
                     <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                         <div>
-                            <h3 className="text-white text-lg font-bold mb-2">WriteSpace</h3>
+                            <h3 className="text-white text-lg font-bold mb-2">Deescribe</h3>
                             <p className="max-w-[90%]">The platform where great stories come to life.</p>
                         </div>
                         <div>
@@ -34,7 +34,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="mt-8 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
-                        © 2024 WriteSpace. All rights reserved.
+                        © 2025 Deescribe. All rights reserved.
                     </div>
                 </div>
             </footer>

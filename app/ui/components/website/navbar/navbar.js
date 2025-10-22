@@ -1,9 +1,11 @@
 'use client';
 
-import { Button,  Menu, X, React, useState} from '@/app/ui/imports';
+import { Button,  Menu, X, React, useState, useRouter} from '@/app/ui/imports';
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+    const router = useRouter()
+
     const links = [
         { href: '#', label: 'About' },
         { href: '#', label: 'Pricing' },
@@ -14,7 +16,7 @@ export default function Navbar() {
     return (
         <nav className="w-full border-b bg-white ">
             <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-8 lg:px-0 py-4">
-                <h1 className="text-2xl font-bold text-black">WriteSpace</h1>
+                <h1 className="text-2xl font-bold text-black">{process.env.NEXT_PUBLIC_APP_NAME}</h1>
 
                 {/* Desktop links */}
                 <div className="hidden md:flex gap-8 text-gray-700">
@@ -31,7 +33,7 @@ export default function Navbar() {
 
                 {/* Action button */}
                 <div className="hidden md:block">
-                    <Button>Get Started</Button>
+                    <Button onclick={()=>router.push('/login')}>Get Started</Button>
                 </div>
 
                 {/* Mobile menu button */}
@@ -57,7 +59,7 @@ export default function Navbar() {
                                 {link.label}
                             </a>
                         ))}
-                        <Button className="w-full">Get Started</Button>
+                        <Button onclick={()=>router.push('/login')} className="w-full">Get Started</Button>
                     </div>
                 </div>
             )}

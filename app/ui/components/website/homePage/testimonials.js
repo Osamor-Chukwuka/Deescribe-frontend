@@ -3,12 +3,12 @@ import { Star } from "@/app/ui/imports";
 export default function Testimonials() {
     const testimonies = [
         {
-            quote: "WriteSpace has transformed how I share my ideas. The audience engagement is incredible.",
+            quote: "Deescribe has transformed how I share my ideas. The audience engagement is incredible.",
             name: "Sarah Chen",
             role: "Tech Writer",
         },
         {
-            quote: "I've built my entire personal brand through WriteSpace. The platform just works.",
+            quote: "I've built my entire personal brand through Deescribe. The platform just works.",
             name: "Marcus Johnson",
             role: "Entrepreneur",
         },

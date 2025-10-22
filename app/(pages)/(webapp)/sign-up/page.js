@@ -66,7 +66,7 @@ export default function SignUpPage() {
             <div className="w-full lg:max-w-[40%] bg-white rounded-lg shadow p-8">
                 <h2 className="text-2xl font-bold text-gray-900 text-center">Create an account</h2>
                 <p className="mt-2 text-sm text-gray-600 text-center">
-                    Enter your information to create your WriteSpace account
+                    Enter your information to create your Deescribe account
                 </p>
 
                 <form onSubmit={handleSubumit} className="mt-6 space-y-6">
