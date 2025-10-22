@@ -71,7 +71,7 @@ export default function AppNavbar({ searchTerm, setSearchTerm, setSearchLoading,
     return (
         <div className="border-b border-gray-300 lg:mb-6 mb-9">
             <div className="flex justify-between items-center lg:mb-0 mb-3 px-4 md:px-12 pb-3 lg:pb-0">
-                <h1 className="text-xl text-start lg:-mx-12 font-semibold w-full ">{process.env.NEXT_PUBLIC_APP_NAME}</h1>
+                <h1 className="text-2xl text-start lg:-mx-12 font-semibold w-full ">{process.env.NEXT_PUBLIC_APP_NAME}</h1>
 
 
 
