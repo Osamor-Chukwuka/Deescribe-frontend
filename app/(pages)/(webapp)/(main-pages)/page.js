@@ -118,7 +118,7 @@ export default function Explore() {
                         </main>
                         :
                         postError == null ?
-                            <p className="text-center  w-full text-[#757575] pt-9">No more Posts for now...</p>
+                            <p className="text-center  w-full text-[#757575] pt-9">No Posts for now...</p>
 
                             :
                             null
