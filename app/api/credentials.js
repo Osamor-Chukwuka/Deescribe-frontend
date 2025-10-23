@@ -8,7 +8,7 @@ const CloudinaryApiSecret = process.env.NEXT_PUBLIC_CLOUDINARY_SECRET_KEY
 // const apiVersion = '/v1'
 
 export const credentials = {
-    baseUrl: productionIp,
+    baseUrl: localIp,
     CloudinaryApiKey: CloudinaryApiKey,
     CloudinaryApiSecret: CloudinaryApiSecret,
     CloudName: 'drmjq7src',

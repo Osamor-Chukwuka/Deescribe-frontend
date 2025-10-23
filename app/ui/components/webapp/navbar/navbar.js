@@ -1,5 +1,5 @@
 'use client'
-import { FiSearch, BiUserCircle, Menu, X, useState, Link, usePathname, useUserStore, useRouter, FaRegUser, IoSettingsOutline, FiLogOut, Image, Cookies, GetAllExplorePostsApi } from '@/app/ui/imports'
+import { FiSearch, BiUserCircle, Menu, X, useState, Link, usePathname, useUserStore, useRouter, FaRegUser, IoSettingsOutline, FiLogOut, Image, Cookies, GetAllExplorePostsApi, FaBookmark, Bookmark } from '@/app/ui/imports'
 import { WordsIndexes } from '@/app/utils/words-indexes';
 import toast from 'react-hot-toast';
 
@@ -12,7 +12,7 @@ export default function AppNavbar({ searchTerm, setSearchTerm, setSearchLoading,
     const [userIconOpen, setUserIconOpen] = useState(false);
 
     const sidebarItems = [{ name: 'Explore', link: '/' }, { name: 'My Feed', link: '/feed' }]
-    const userIconItems = [{ name: 'Profile', link: `/profile/${user?.user?.id}`, icon: <FaRegUser /> }, { name: 'Settings', link: '/settings', icon: <IoSettingsOutline /> }]
+    const userIconItems = [{ name: 'Profile', link: `/profile/${user?.user?.id}`, icon: <FaRegUser /> }, { name: 'Bookmarks', link: '/bookmarks', icon: <Bookmark className='text-sm w-5 pb-2 pe-1' /> }, { name: 'Settings', link: '/settings', icon: <IoSettingsOutline /> }]
 
     // path variable
     const pathname = usePathname();

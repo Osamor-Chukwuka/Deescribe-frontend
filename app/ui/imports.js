@@ -69,7 +69,7 @@ import { CoverImageSkeleton } from "./components/webapp/general/cover-image-skel
 import {
     LoginApi, SignupApi, GetAllExplorePostsApi, LikePostApi, UnlikePostApi, GetComments, CreateComments, UploadPostImages,
     CreatePostApi, CreateBookmark, DeleteBookmark, GetCategories, GetUsersIamNotFollowing, FollowUser, UnFollowUser, GetFeedPostsApi,
-    GetUserProfile, GetUserPostsApi, UpdateUser
+    GetUserProfile, GetUserPostsApi, UpdateUser, GetBookmarks
 } from "../api/api";
 
 
@@ -85,5 +85,5 @@ export {
     WriteSettings, PostCategories, GetCategories, GetUsersIamNotFollowing, SuggestedForYouSkeleton, FollowUser,
     UnFollowUser, GetFeedPostsApi, GetUserProfile, BioSection, ProfileImages, UserAbout, UserActivity, UserArticles,
     UserPopularArticles, UserQuickAction, formatDate, GetUserPostsApi, UpdateUser, IoCamera, ProfileImageSkeleton,
-    CoverImageSkeleton
+    CoverImageSkeleton, GetBookmarks
 };

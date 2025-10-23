@@ -338,6 +338,30 @@ export const CreateComments = async (id, content) => {
 }
 
 
+//BOOKMARKS
+//get bookmarks
+export const GetBookmarks = async (searchTerm) => {
+    const token = Cookies.get('token')
+
+    try {
+        const response = await fetch(`${credentials.baseUrl}/bookmarks?searchterm=${searchTerm}`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': "application/json",
+                'Accept': "application/json",
+                'Authorization': `Bearer ${token}`
+            }
+        })
+
+        const jsonResponse = await response.json()
+
+        return { response, jsonResponse }
+
+    } catch (error) {
+        return { error: error.message }
+    }
+}
+
 // create bookmark
 export const CreateBookmark = async (postId) => {
     const token = Cookies.get('token')
