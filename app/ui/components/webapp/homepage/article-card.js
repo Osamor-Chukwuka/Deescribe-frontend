@@ -117,7 +117,7 @@ export default function ArticleCard({ setReRenderSuggestedProfile, index, articl
 
                                 <span className="ms-1 text-xs font-medium space-x-3 text-gray-700 h-full">
                                     <span className='text-gray-500 font-normal'>{timeAgo(article.created_at)}</span>
-                                    <span className='text-gray-500 font-normal'>{'10 min read'}</span>
+                                    {/* <span className='text-gray-500 font-normal'>{'10 min read'}</span> */}
                                     {console.log("article user id: ", article?.user?.id)}
                                 </span>
 
@@ -223,7 +223,7 @@ export default function ArticleCard({ setReRenderSuggestedProfile, index, articl
 
                     <span className="ms-1 text-xs font-medium space-x-3 text-gray-700 h-full">
                         <span className='text-gray-500 font-normal'>{timeAgo(article.created_at)}</span>
-                        <span className='text-gray-500 font-normal'>{'10 min read'}</span>
+                        {/* <span className='text-gray-500 font-normal'>{'10 min read'}</span> */}
                         {console.log("article user id: ", article?.user?.id)}
                     </span>
 

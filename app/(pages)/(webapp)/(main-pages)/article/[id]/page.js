@@ -259,7 +259,7 @@ export default function ArticleDetails() {
                             <div>
                                 {console.log("single article: ", post)}
                                 <div className="flex items-center space-x-2">
-                                    <span className="font-semibold text-gray-900">{post?.post?.user?.name}</span>
+                                    <Link href={`/profile/${post?.post?.user?.id}`} className="font-semibold text-gray-900 hover:text-primary-hover cursor-pointer">{post?.post?.user?.name}</Link>
 
                                     {currentUser?.user?.id != post?.post?.user?.id && (
                                         localIsFollowing ?
@@ -277,9 +277,9 @@ export default function ArticleDetails() {
                             <div className="flex items-center space-x-1">
                                 <Calendar className="w-4 h-4" /><span>{timeAgo(post?.post?.created_at)}</span>
                             </div>
-                            <div className="flex items-center space-x-1">
+                            {/* <div className="flex items-center space-x-1">
                                 <Clock className="w-4 h-4" /><span>{'8 min read'}</span>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
@@ -287,13 +287,13 @@ export default function ArticleDetails() {
                     {/* Images */}
                     <div className='flex flex-col justify-center w-full items-center'>
                         {post?.post?.images?.map((img, i) => (
-                            <figure key={i} className="pb-5 w-full lg:max-w-[60%]">
+                            <figure key={i} className="pb-5 w-full ">
                                 <Image
-                                    width={100}
-                                    height={100}
+                                    width={2000}
+                                    height={2000}
                                     src={img}
                                     alt={'image'}
-                                    className=" max-h-98 lg:max-w-[90%] mx-auto w-full rounded-lg shadow"
+                                    className=" mx-auto w-full rounded-lg shadow"
                                 />
                                 <figcaption className="text-sm text-gray-600 italic text-center">
                                     {'image ' + (i + 1)}

@@ -3,6 +3,7 @@
 import React, { useCallback, useMemo, useState } from 'react'
 import { createEditor, Editor, Element as SlateElement, Transforms, Range } from 'slate'
 import { Slate, Editable, withReact, DefaultElement, useSlate } from 'slate-react'
+import { withHistory, HistoryEditor } from 'slate-history'
 import {
     Bold,
     Italic,
@@ -208,7 +209,7 @@ const Toolbar = () => {
 
 // --- Main Component ---
 export const TextArea = ({ content, setContent }) => {
-    const [editor] = useState(() => withLinks(withReact(createEditor())))
+    const [editor] = useState(() => withHistory(withLinks(withReact(createEditor()))))
 
     // --- Initial Document ---
     const initialValue = useMemo(
@@ -273,6 +274,8 @@ export const TextArea = ({ content, setContent }) => {
                             case '2': e.preventDefault(); CustomEditor.toggleList(editor, 'bulleted-list'); break
                             case '`': e.preventDefault(); CustomEditor.toggleCodeBlock(editor); break
                             case 'k': e.preventDefault(); CustomEditor.toggleLink(editor); break
+                            case 'z': e.preventDefault(); HistoryEditor.undo(editor); break
+                            case 'y': e.preventDefault(); HistoryEditor.redo(editor); break
                             default: return
                         }
                     }}

@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
     if (!hasHydrated) return;
 
     if (!user) {
-      router.push('/login')
+      router.push('/landing')
       return;
     }
   }

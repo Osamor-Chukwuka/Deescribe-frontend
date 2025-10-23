@@ -11,7 +11,7 @@ export default function AppNavbar({ searchTerm, setSearchTerm, setSearchLoading,
     const [menuOpen, setMenuOpen] = useState(false);
     const [userIconOpen, setUserIconOpen] = useState(false);
 
-    const sidebarItems = [{ name: 'Explore', link: '/' }, { name: 'Write', link: '/write' }, { name: 'My Feed', link: '/feed' }]
+    const sidebarItems = [{ name: 'Explore', link: '/' }, { name: 'My Feed', link: '/feed' }]
     const userIconItems = [{ name: 'Profile', link: `/profile/${user?.user?.id}`, icon: <FaRegUser /> }, { name: 'Settings', link: '/settings', icon: <IoSettingsOutline /> }]
 
     // path variable
@@ -99,7 +99,7 @@ export default function AppNavbar({ searchTerm, setSearchTerm, setSearchLoading,
                     </div>
 
                     {/* Write button */}
-                    <button className="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-full w-full">
+                    <button onClick={()=>router.push('/write')} className="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-full w-full cursor-pointer">
                         + Write
                     </button>
 
@@ -173,7 +173,7 @@ export default function AppNavbar({ searchTerm, setSearchTerm, setSearchLoading,
                     </div>
 
                     {/* Write button */}
-                    <button className="bg-primary hover:bg-primary-hover text-white px-4 py-2 rounded-full">
+                    <button onClick={()=>router.push('/write')} className="bg-primary cursor-pointer hover:bg-primary-hover text-white px-4 py-2 rounded-full">
                         + Write
                     </button>
 

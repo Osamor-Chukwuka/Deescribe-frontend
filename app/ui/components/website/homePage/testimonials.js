@@ -21,7 +21,7 @@ export default function Testimonials() {
     return (
         <section className="bg-gray-50 py-16 my-[10%]">
             <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-0">
-                <h2 className="text-3xl  sm:text-4xl font-extrabold text-gray-900 text-center">
+                <h2 className="text-3xl  lg:text-4xl font-extrabold text-gray-900 text-center">
                     Loved by writers worldwide
                 </h2>
                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 w-full gap-6">

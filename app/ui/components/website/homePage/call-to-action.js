@@ -3,7 +3,7 @@ import { ArrowRight, Button, useRouter } from "@/app/ui/imports";
 export default function CallToAction() {
     const router = useRouter()
     return (
-        <div>
+        <div className="px-3 lg:px-0">
             <section className="text-center pb-[10%] ">
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
                     Ready to start your writing journey?
@@ -13,7 +13,7 @@ export default function CallToAction() {
                 </p>
                 <div className="mt-8">
                     <Button onclick={()=>router.push('/login')}>
-                        Get Started for Free <ArrowRight className="ml-2 w-4 h-4" />
+                        Get Started <ArrowRight className="ml-2 w-4 h-4" />
                     </Button>
                 </div>
             </section>

@@ -2,7 +2,7 @@ import { BookOpen, TrendingUp, Users } from "@/app/ui/imports";
 
 export default function FeaturesSection() {
     return (
-        <section className="">
+        <section className="pt-2 lg:pt-0 px-2 lg:px-0">
             <div className="text-center">
                 <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
                     Everything you need to tell your story
@@ -28,7 +28,7 @@ export default function FeaturesSection() {
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow">
                     <TrendingUp className="w-8 h-8 text-green-600 mx-auto" />
-                    <h3 className="mt-4 text-lg font-semibold text-gray-900 text-center">Earn Money</h3>
+                    <h3 className="mt-4 text-lg font-semibold text-gray-900 text-center">Earn Money (soon)</h3>
                     <p className="mt-2 text-gray-600 text-sm text-center">
                         Get paid for your writing through our Partner Program and reader subscriptions.
                     </p>

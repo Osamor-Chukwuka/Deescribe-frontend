@@ -4,8 +4,8 @@ export default function HeroSection() {
     const router = useRouter()
 
     return (
-        <section className="text-center mt-20 max-w-3xl mx-auto">
-            <div className='w-full lg:text-6xl sm:text-5xl font-extrabold text-gray-900'>
+        <section className="text-center lg:mt-20 mt-10 max-w-3xl mx-auto px-2 lg:px-0">
+            <div className='w-full lg:text-6xl text-4xl font-extrabold text-gray-900'>
                 <h2 className=" ">
                     Where great stories
                 </h2>
@@ -13,7 +13,7 @@ export default function HeroSection() {
             </div>
 
             <p className="mt-5 text-lg text-gray-600">
-                Join millions of writers and readers on Deescribe. Share your ideas,
+                Join writers and readers on Deescribe. Share your stories,
                 discover new perspectives, and connect with a community that values
                 quality content.
             </p>
